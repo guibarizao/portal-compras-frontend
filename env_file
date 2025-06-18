@@ -1,0 +1,6 @@
+PORT=8080
+#REACT_APP_BASE_API_URL=http://localhost:3000
+REACT_APP_USE_SENIORX=NOT
+REACT_APP_FORGOT_URL=https://platform.senior.com.br/login/forgot.html?redirectTo=https%3A%2F%2Fplatform.senior.com.br%2Fsenior-x%2F&tenant=sicredidexis.coop.br
+REACT_APP_MAX_FILE_SIZE_MB=5
+REACT_APP_SENIORX_URL=https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform

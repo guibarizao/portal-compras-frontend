@@ -1,0 +1,79 @@
+{
+  "name": "portal-compras",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@mui/icons-material": "5.11.0",
+    "@mui/lab": "5.0.0-alpha.115",
+    "@mui/material": "5.11.4",
+    "@mui/styled-engine-sc": "5.11.0",
+    "@mui/styles": "5.11.7",
+    "@mui/x-date-pickers": "^6.11.2",
+    "@seniorsistemas/senior-platform-data": "^5.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.41",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "5.1.26",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.10",
+    "material-ui-popup-state": "^5.0.10",
+    "moment": "^2.30.1",
+    "polished": "^4.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-input-mask": "3.0.0-alpha.2",
+    "react-markdown": "^10.1.0",
+    "react-number-format": "^5.3.4",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "styled": "^1.0.0",
+    "styled-components": "5.3.6",
+    "toastr": "2.1.4",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4",
+    "yup": "0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "BUILD_PATH='/var/www/html/portal-compras' react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "homepage": ".",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-input-mask": "3.0.2",
+    "@types/toastr": "2.1.40",
+    "@types/uuid": "^9.0.8",
+    "@types/yup": "0.32.0"
+  }
+}
