@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/marca_dagua.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  opacity: 1;
+}
+
+code {
+  font-family: "Exo 2", sans-serif;
+}
