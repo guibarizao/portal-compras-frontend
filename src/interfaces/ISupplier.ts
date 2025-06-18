@@ -1,0 +1,35 @@
+import ISupplierType from "./ISupplierType";
+import ISupplierErpStatus from "./ISupplierErpStatus";
+import IPaymentCondition from "./IPaymentCondition";
+import IPaymentForm from "./IPaymentForm";
+export default interface ISupplier {
+  id?: string;
+  code?: string;
+  supplierTypeId: string;
+  corporateName: string;
+  tradingName: string;
+  corporateDocument: string;
+  isActive: boolean;
+  contactName?: string;
+  paymentConditionId: string;
+  paymentCondition?: IPaymentCondition;
+  paymentFormId: string;
+  paymentForm?: IPaymentForm;
+  phone1: string;
+  phone2: string;
+  email1: string;
+  email2: string;
+  address: string;
+  addressNumber: string;
+  neighborhood: string;
+  complement: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  additionalInfo?: string;
+  integrationDate?: Date;
+  isDraft: boolean;
+  supplierErpStatus: ISupplierErpStatus | undefined | null;
+  supplierType?: ISupplierType | undefined | null;
+  closed_at?: Date;
+}

@@ -1,0 +1,46 @@
+import IBranchOffice from "./IBranchOffice";
+import IPaymentCondition from "./IPaymentCondition";
+import IPaymentForm from "./IPaymentForm";
+import IPurchaseRequestCustomField from "./IPurchaseRequestCustomField";
+import IPurchaseRequestErpStatus from "./IPurchaseRequestErpStatus";
+import IPurchaseRequestMessage from "./IPurchaseRequestMessage";
+import IPurchaseRequestReason from "./IPurchaseRequestReason";
+import IPurchaseRequestType from "./IPurchaseRequestType";
+import ISupplier from "./ISupplier";
+import ISuppliersBankDetails from "./ISuppliersBankDetails";
+import IUser from "./IUser";
+
+export default interface IPurchaseRequest {
+  id?: string;
+  branchOfficeId?: string;
+  purchaseRequestTypeId: number;
+  integrationStatus?: "PENDING" | "SUCCESS" | "ERROR";
+  integrationDate?: Date;
+  purchaseRequestErpStatusId?: number;
+  requestNumber?: string;
+  protocol?: string;
+  isDraft: boolean;
+  created_at?: Date;
+  updated_at?: Date;
+  branchOffice?: IBranchOffice;
+  purchaseRequestType?: IPurchaseRequestType;
+  purchaseRequestErpStatus?: IPurchaseRequestErpStatus;
+  userId?: string;
+  user?: IUser;
+  supplierId?: string | null;
+  suppliersBankDetailsId?: string | null;
+  comments?: string | null;
+  supplier?: ISupplier;
+  purchaseRequestReasonId?: number | null;
+  purchaseRequestReasonDetails?: string;
+  purchaseRequestCustomFields?: IPurchaseRequestCustomField[];
+  purchaseRequestReason?: IPurchaseRequestReason;
+  suppliersBankDetails?: ISuppliersBankDetails;
+  paymentConditionId?: string | null;
+  paymentFormId?: string | null;
+  paymentCondition?: IPaymentCondition;
+  paymentForm?: IPaymentForm;
+  supplierRequired?: boolean;
+  reasonRequired?: boolean;
+  purchaseRequestMessages?: IPurchaseRequestMessage[];
+}
